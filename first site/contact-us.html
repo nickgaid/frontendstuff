@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HMU Library</title>
+        <link rel="icon" href="images/HMU-Logo-mikro_2.jpg">        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+        <script src="validation.js"></script>
+	</head>
+    
+	<body>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="home.html"><img src="images/HMU-Logo-mikro_2.jpg" alt="HMU" width="60" height="60"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Αρχική Σελίδα</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-up.html">Εγγραφή</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-in.html">Είσοδος</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books1.html">Κατάλογος βιβλίων</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Επικοινωνία</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
+        <header class="page-header header container-fluid">
+            <div class="overlay">
+                <div class="description">
+                    <h1>Επικοινώνησε Μαζί μας</h1>
+                    <div class="row">
+                        <div class="card col-lg-4 col-md-4 col-sm-12 text-center"></div>
+                        <div class="card col-lg-4 col-md-4 col-sm-12 text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name" onkeydown="validation()" name="Name" required>
+                                </div>
+                                <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address" name="email"required>
+                                </div>
+                                <div class="form-group">
+                                <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-secondary btn-block" value="Send" name="submit" required>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="card col-lg-4 col-md-4 col-sm-12 text-center"></div>
+                    </div>
+                </div> 
+            </div>
+        </header>
+        <div class="background"></div>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                      <h6 class="text-uppercase font-weight-bold">Agios Nikolaos</h6>
+                      <p>
+                        Library of the Department of Management Science and Technology, Fournia Lakonia, Agios Nikolaos 72100
+                        <br>––––––––––––
+                        <br>LibAg@hmu.gr
+                        <br>+3028410-91103,
+                        <br>+302810–91102
+                    </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                      <h6 class="text-uppercase font-weight-bold">Heraklion</h6>
+                      <p>
+                        HMU Library, Estavromenos, 71410 Heraklion Crete
+                        <br>––––––––––––
+                        <br>LibHer@hmu.gr
+                        <br>+30–2810–379330,
+                        <br>+30–2810–379332
+                      </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                      <h6 class="text-uppercase font-weight-bold">Chania</h6>
+                      <p>
+                        Library of Departments of Western Crete, 3 Romanou Halepa str. ,73133, Chania
+                        <br>––––––––––––
+                        <br>LibCha@hmu.gr
+                        <br>+3028210-23000,
+                        <br>+302810–23058
+                      </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                      <h6 class="text-uppercase font-weight-bold">Rethymno</h6>
+                      <p>
+                        Library of the School of Music and Audiovisual Technology, Evagelou Daskalaki,Perivolia, 74133, Rethymno
+                        <br>––––––––––––
+                        <br>LibRet@hmu.gr
+                        <br>+3028310-2190
+                      </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                      <h6 class="text-uppercase font-weight-bold">Sitia</h6>
+                      <p>
+                        Library of the Department of Nutrition Sciences and Dietetics, Tripitos, 72300, Sitia
+                        <br>––––––––––––
+                        <br>LibSit@hmu.gr
+                        <br>+3028430-29497
+                      </p>
+                      <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+                  </div>
+          </footer>
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	</body>
+	
+</html>
